@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@import './other/colours';
+@import './cross_page_parts/nav';
+@import './homepage_parts/slider';
+@import './homepage_parts/news_preview';
+@import './cross_page_parts/scrollToTopBtn';
+@import './cross_page_parts/footer';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $body_G-darker;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.overflow {
+    height: 100vh;
+    overflow: hidden;
+}

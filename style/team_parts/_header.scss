@@ -1,0 +1,22 @@
+section.cover_photo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+
+    .news-header {
+        height: 40vw;
+        min-height: 200px;
+        width: 65%;
+        min-width: 250px;
+        max-width: 1200px;
+        background-image: url(/CasablancaAssingmentITStartupProject/img/team.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin: 30px 0 30px 0;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+}

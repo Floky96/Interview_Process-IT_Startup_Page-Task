@@ -1,0 +1,88 @@
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    height: 100%;
+
+    .contact-info-left {
+        height: 297px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            width: 220px;
+            color: #fff;
+            opacity: .9;
+            font-size: 20px;
+        }
+
+
+        button {
+            background-color: #00A1E5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+
+        }
+
+        .callBtn {
+            background-color: #25D366;
+            color: white;
+            margin-bottom: 15px;
+
+            &:hover {
+                background-color: #1d974a;
+            }
+        }
+
+        .downloadBtn {
+            background-color: #00A1E5;
+            color: #fff;
+
+            &:hover {
+                background-color: #1c7cd1;
+            }
+        }
+    }
+
+    .contact-info-right {
+        height: 297px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .map {
+            height: 30%;
+            width: 30%;
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid $border_G-lighter;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-info {
+        flex-direction: column;
+
+        .contact-info-left {
+            width: 100%;
+        }
+
+        .contact-info-right {
+            width: 100%;
+            .map {
+                width: 80%;
+            }
+        }
+    }
+
+}

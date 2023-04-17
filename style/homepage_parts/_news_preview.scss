@@ -1,0 +1,113 @@
+.overlayText {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+}
+
+.news-overview_section {
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .article {
+        height: 80vw;
+        border: 1px solid $border_G-dark;
+        background-color: $content_G-medium;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        transition: scale .1s ease-in;
+        max-height: 250px;
+        width: 70%;
+        max-width: 1000px;
+        margin-top: 40px;
+
+        &:hover {
+            scale: 1.05;
+            box-shadow: 2px 4px 2px 2px #ffffff70;
+
+            .overlayText {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            opacity: .8;
+            margin: 0;
+            font-size: 30px;
+            border-bottom: 2px solid $border_G-light;
+            padding: 0 40px;
+            padding-top: 20px;
+        }
+
+        p {
+            color: #fff;
+            opacity: .7;
+            text-align: left;
+            padding: 0 80px;
+            font-size: 18px;
+
+        }
+
+        .blur_wrapper {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, transparent, #1616163d, #1b1b1b);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 900px) {
+    .news-overview_section {
+        .article {
+            max-width: 1000px;
+            margin-top: 40px;
+
+            h1 {
+                padding: 0 35px;
+                padding-top: 20px;
+            }
+
+            p {
+
+                padding: 0 35px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .news-overview_section {
+        .article {
+            max-height: 200px;
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 40px;
+
+            h1 {
+                padding: 0 18px;
+                padding-top: 18px;
+            }
+
+            p {
+                padding: 0 30px;
+            }
+        }
+    }
+}

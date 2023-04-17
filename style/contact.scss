@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@import './other/colours';
+@import './cross_page_parts/nav';
+@import './contact_parts/contact_info';
+@import './contact_parts/email_tab';
+@import './cross_page_parts/scrollToTopBtn';
+@import './cross_page_parts/footer';
+
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: $body_G-darker;
+    font-family: 'Montserrat', sans-serif;
+/*     overflow-x: hidden; */
+}
+
+.overflow {
+    height: 100vh;
+    overflow: hidden;
+}

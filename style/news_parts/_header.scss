@@ -1,0 +1,48 @@
+section.cover_photo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: #FFFFFF60;
+        text-shadow: 1px 1px 1px #FFFFFF90;
+        opacity: .8;
+        margin-top: 50px;
+        font-size: 30px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid $border_G-light;
+        box-shadow: 2px 2px #96969670;
+    }
+
+
+    .news-header {
+        height: 45vw;
+        max-height: 700px;
+        width: 100%;
+        max-width: 1200px;
+        background-image: url(/CasablancaAssingmentITStartupProject/img/news_header.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 60px 0 30px 0;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 900px) {
+    section.cover_photo {
+        h2 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    section.cover_photo {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}

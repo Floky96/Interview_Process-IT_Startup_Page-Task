@@ -1,0 +1,97 @@
+.team_section {
+    width: 100vw;
+    background-color: $content_G-dark;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #FFFFFF60;
+        text-shadow: 1px 1px 1px #FFFFFF90;
+        opacity: .8;
+        margin-top: 50px;
+        position: absolute;
+        top: 0;
+        font-size: 30px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid $border_G-light;
+        box-shadow: 2px 2px #96969670;
+    }
+
+    .person {
+        margin-top: 80px;
+        padding: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid $border_G-light;
+        border-radius: 5%;
+        transition: all 0.3s ease-in-out;
+        transform: translateZ(0);
+        box-shadow: 0 0 20px $border_G-darker;
+        margin: 50px 50px;
+
+        .headshot {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #fff;
+            opacity: .8;
+            font-size: 15px;
+            margin: 0;
+            padding: 5px;
+            letter-spacing: 1px;
+        }
+
+        h4 {
+            color: #fff;
+            opacity: .5;
+            font-size: 15px;
+            margin: 0;
+            padding: 5px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 900px) {
+    .team_section {
+        h2 {
+            font-size: 25px;
+        }
+
+        .person {
+            margin: 35px 35px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .team_section {
+        h2 {
+            font-size: 20px;
+        }
+
+        .person {
+            margin: 25px 25px;
+        }
+    }
+}

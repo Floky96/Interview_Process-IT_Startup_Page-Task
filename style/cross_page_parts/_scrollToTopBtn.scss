@@ -1,0 +1,53 @@
+.scrollToTop-btn_section {
+    width: 100vw;
+    position: relative;
+
+    .scrollToTopBtn {
+        transition: opacity 1s ease-in-out;
+        display: none;
+        position: fixed;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        opacity: .9;
+        font-size: 1rem;
+        cursor: pointer;
+        animation: bounce 3s ease-in-out infinite;
+        z-index: 10000;
+
+        @keyframes bounce {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            15% {
+                transform: translateY(0);
+            }
+
+            35% {
+                transform: translateY(-4px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            65% {
+                transform: translateY(-4px);
+            }
+
+            85% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+    }
+}
